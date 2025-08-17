@@ -1,0 +1,73 @@
+/* font open sans */
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+:root{
+    --primarycolor : #0e6253;
+    --secondarycolor : #ffc107;
+    --whitecolor :#fff;
+    --blackcolor: #222;
+    --softgreeencolor: #d9f2ee;
+    --darkgraycolor: #a7a7a7;
+    --graycolor: #f5f5f5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.slidebar{
+    height: 100%;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 2%;
+    background-color: var(--primarycolor);
+    color: var(--whitecolor);
+
+}
+.slidebar-menu{
+    display: flex;
+    flex-direction: column;
+}
+.slidebar-menu a , .slidebar-logout a{
+    padding: 5%, 8%;
+    margin: 1.5rem 0 ;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    color: var(--whitecolor);
+    text-decoration: none;
+
+}
+/* .slidebar-logout a{
+    color: var(--whitecolor);
+    text-decoration: none;
+
+}  */
+.slidebar-menu a ion-icon{
+    font-size: 20px;
+}
+.slidebar-menu a:hover{
+    height: 35px;
+    background-color: var(--secondarycolor);
+    border-radius: 50px;
+}
