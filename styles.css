@@ -58,15 +58,10 @@ body{
     text-decoration: none;
 
 }
-/* .slidebar-logout a{
-    color: var(--whitecolor);
-    text-decoration: none;
-
-}  */
 .slidebar-menu a ion-icon{
     font-size: 20px;
 }
-.slidebar-menu a:hover{
+.slidebar-menu a:hover, .slidebar-logout a:hover{
     height: 35px;
     background-color: var(--secondarycolor);
     border-radius: 50px;
